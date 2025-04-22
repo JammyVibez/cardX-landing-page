@@ -1,0 +1,23 @@
+.glowing {
+    animation: pulseGlow 2s infinite ease-in-out;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 2px #ff00ff);
+    }
+    50% {
+      filter: drop-shadow(0 0 12px #ff00ff);
+    }
+  }
+  
+  .floating {
+    animation: floatCard 5s ease-in-out infinite;
+  }
+  
+  @keyframes floatCard {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+  }
+  
