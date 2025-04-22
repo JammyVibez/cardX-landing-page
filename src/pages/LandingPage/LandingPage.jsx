@@ -12,18 +12,20 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
-    <>
+    < >
      <Helmet>
         <title>Welcome | CardX</title>
       </Helmet>
+      <div className="bg-black text-white dark:bg-animeDark dark:text-animeText">
       <Header />
-      <div className="landing-page bg-black text-white dark:bg-animeDark dark:text-animeText">
+      <div className="landing-page">
         <Hero/>
         <Carousel />
         <CardTier />
         <CommunitySec />
         <ArenaSection />
         {/* ⬇️ Add more sections below later like cards, hero, features etc */}
+      </div>
       </div>
     </>
   );
