@@ -1,0 +1,40 @@
+/* Explore.css */
+
+/* Flip Animation for Trending Cards */
+.card-flip-container {
+    perspective: 1000px;
+  }
+  .card-flip-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .card-flip-container:hover .card-flip-inner {
+    transform: rotateY(180deg);
+  }
+  .card-front,
+  .card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Glow Button */
+  .glow-button {
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.6), 0 0 30px rgba(236, 72, 153, 0.4);
+  }
+  
+  /* Optional: Glass card style */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import "./HeaderLanding.css";
 
 const Header = () => {
@@ -15,8 +16,12 @@ const Header = () => {
       </div>
 
       <nav className="nav-links">
+      <Link to="/explore">
         <a href="#carousel">Explore</a>
+        </Link>
+        <Link to="/features">
         <a href="#features">Features</a>
+        </Link>
       </nav>
 
       {/* <div className="theme-toggle" onClick={() => setDarkTheme(!darkTheme)}>

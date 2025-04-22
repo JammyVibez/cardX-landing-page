@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUsers, FaGavel, FaPoll, FaCrown, FaTv, FaGift, FaIdBadge, FaShoppingCart, FaUserEdit } from "react-icons/fa";
+import Header from "../../components/HeaderLanding/HeaderLanding"; 
 import "./Feature.css";
 
 const features = [
@@ -52,7 +53,9 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-gradient-to-b from-[#0e0f3a] to-[#0b0c28] text-white py-24 px-6">
+    <>
+    <Header />
+    <section className=" from-[#0e0f3a] to-[#0b0c28] text-white py-24 px-6">
       <h2 className="text-4xl font-bold text-center mb-14 glow-text">Core Features</h2>
       
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -74,6 +77,7 @@ const FeaturesSection = () => {
         </button>
       </div>
     </section>
+    </>
   );
 };
 
