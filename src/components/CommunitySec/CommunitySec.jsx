@@ -4,7 +4,7 @@ import "./CommunitySec"
 const communities = [
   {
     name: "Anime ⚔️",
-    image: "/comm-img/hero-1.jpg",
+    image: "/comm-img/blog-3.jpg",
     description: "Home of warriors and magical cards.",
     live: 312,
     topPulls: [
@@ -14,7 +14,7 @@ const communities = [
   },
   {
     name: "Tech 🛠️",
-    image: "/community/tech.png",
+    image: "/avatar/cyberpunkpfp.png",
     description: "Mech cards, gear systems, and robots.",
     live: 198,
     topPulls: [
@@ -24,7 +24,7 @@ const communities = [
   },
   {
     name: "Entertainment 🎬",
-    image: "/community/entertainment.png",
+    image: "/comm-img/blog-7.jpg",
     description: "Celebrity cards, VFX magic, and rare skins.",
     live: 421,
     topPulls: [

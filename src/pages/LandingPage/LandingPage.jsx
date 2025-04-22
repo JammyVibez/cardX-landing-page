@@ -5,6 +5,7 @@ import Hero from "../../components/Hero/Hero"
 import CardTier from "../../components/CardTier/CardTier";
 import CommunitySec from "../../components/CommunitySec/CommunitySec";
 import ArenaSection from "../../components/FullFeatures/ArenaSection";
+import { Helmet } from 'react-helmet';
 import "./LandingPage.css";
 
 
@@ -12,6 +13,9 @@ import "./LandingPage.css";
 const LandingPage = () => {
   return (
     <>
+     <Helmet>
+        <title>Welcome | CardX</title>
+      </Helmet>
       <Header />
       <div className="landing-page">
         <Hero/>

@@ -2,6 +2,7 @@ import React from "react";
 import { FaFire, FaUsers, FaBoxOpen } from "react-icons/fa";
 import { GiCardPick, GiGalaxy, GiTreasureMap } from "react-icons/gi";
 import Header from "../../components/HeaderLanding/HeaderLanding"; 
+import { Helmet } from 'react-helmet';
 import "./Explore.css"; // Custom styles for flips and glow effects
 
 const trendingCards = [
@@ -12,7 +13,7 @@ const trendingCards = [
     power: 9200,
     rarity: "Legendary",
     owner: "XNeo",
-    image: "/assets/cards/flame-spirit.png",
+    video: "/video-card/vid-card-15.mp4",
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ const trendingCards = [
     power: 7800,
     rarity: "Epic",
     owner: "NamiX",
-    image: "/assets/cards/aqua-mage.png",
+    video: "/video-card/vid-card-18.mp4",
   },
   {
     id: 3,
@@ -30,21 +31,21 @@ const trendingCards = [
     power: 6900,
     rarity: "Rare",
     owner: "DarkZero",
-    image: "/assets/cards/cyber-shinobi.png",
+    video: "/video-card/vid-card-17.mp4",
   },
 ];
 
 const clans = [
   {
     name: "Oblivion",
-    logo: "/assets/clans/oblivion-logo.png",
+    logo: "/comm-img/blog-3.jpg",
     rank: "Top 1",
     motto: "Darkness is eternal",
     featuredCard: "Dark Phoenix",
   },
   {
     name: "Starlight",
-    logo: "/assets/clans/starlight-logo.png",
+    logo: "/comm-img/blog-4.jpg",
     rank: "Top 2",
     motto: "Shine like never before",
     featuredCard: "Celestial Blade",
@@ -62,6 +63,9 @@ const liveEvents = [
 export default function Explore() {
   return (
     <>
+     <Helmet>
+            <title>Explore | CardX</title>
+          </Helmet>
     <Header />
     <div className="explore-wrapper from-[#0a0a23] to-[#0f0c29] text-white min-h-screen pt-20 px-4">
       {/* Galaxy Map */}
@@ -88,7 +92,7 @@ export default function Explore() {
             <div key={card.id} className="card-flip-container glass-card w-60 min-w-[240px]">
               <div className="card-flip-inner">
                 <div className="card-front rounded-t-lg overflow-hidden">
-                  <img src={card.image} alt={card.name} className="w-full h-40 object-cover" />
+                  <video src={card.video} alt={card.name} className="w-full h-40 object-cover"></video>
                   <div className="p-4 bg-[#1e1e3f] text-white">
                     <h3 className="font-bold text-lg">{card.name}</h3>
                     <p>{card.type}</p>

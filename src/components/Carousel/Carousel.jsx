@@ -33,12 +33,12 @@ const Carousel = () => {
   }, []);
 
   return (
+    <> <h2 className="text-4xl font-bold mb-10">
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
+     Card Display
+    </span>
+  </h2>
     <div className="glass-carousel-wrapper">
-       <h2 className="text-4xl font-bold mb-10">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
-         Card Display
-        </span>
-      </h2>
       <div className="glass-carousel" ref={carouselRef}>
         {mediaItems.map((item, index) => (
           <div className="glass-card floating" key={index}>
@@ -51,6 +51,7 @@ const Carousel = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

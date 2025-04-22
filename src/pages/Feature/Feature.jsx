@@ -1,6 +1,7 @@
 import React from "react";
 import { FaUsers, FaGavel, FaPoll, FaCrown, FaTv, FaGift, FaIdBadge, FaShoppingCart, FaUserEdit } from "react-icons/fa";
 import Header from "../../components/HeaderLanding/HeaderLanding"; 
+import { Helmet } from 'react-helmet';
 import "./Feature.css";
 
 const features = [
@@ -54,6 +55,9 @@ const features = [
 const FeaturesSection = () => {
   return (
     <>
+     <Helmet>
+            <title>Features | CardX</title>
+          </Helmet>
     <Header />
     <section className=" from-[#0e0f3a] to-[#0b0c28] text-white py-24 px-6">
       <h2 className="text-4xl font-bold text-center mb-14 glow-text">Core Features</h2>
