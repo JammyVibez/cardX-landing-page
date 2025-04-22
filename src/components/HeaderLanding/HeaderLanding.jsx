@@ -15,7 +15,7 @@ const Header = () => {
       </div>
 
       {/* Nav Links */}
-      <nav className="hidden sm:flex items-center space-x-6 text-sm font-medium">
+      <nav className=" sm:flex items-center space-x-6 text-sm font-medium">
         <Link
           to="/explore"
           className="relative text-gray-900 text-white hover:text-cyan-400 transition-colors duration-300"
