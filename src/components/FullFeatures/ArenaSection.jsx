@@ -67,7 +67,7 @@ const ArenaSections = () => {
   return (
     <>
       {/* Arena Battle Highlights */}
-      <section className=" from-[#0e0f3a] to-[#0b0c28] text-white py-24 px-8 md:px-16">
+      <section className=" from-[#0e0f3a] to-[#0b0c28] text-white py-24 px-8 md:px-16 ">
         <h2 className="text-5xl font-bold text-center mb-16 glow-text tracking-wide">Arena Battle Highlights</h2>
         <div className="grid md:grid-cols-3 gap-10">
           {highlights.map((h, i) => (
@@ -89,7 +89,7 @@ const ArenaSections = () => {
       </section>
 
       {/* Marketplace Auction */}
-      <section className=" text-white py-24 px-8 md:px-16  w-screen">
+      <section className=" text-white py-24 px-8 md:px-16">
         <h2 className="text-5xl font-bold text-center mb-16 glow-text tracking-wide">Marketplace Auction</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {marketplaceCards.map((card, i) => (
@@ -112,7 +112,7 @@ const ArenaSections = () => {
       </section>
 
       {/* VIP & Rewards */}
-      <section className=" from-[#140c33] to-[#1b1142] text-white py-24 px-8 md:px-16 text-center relative overflow-hidden  w-screen">
+      <section className=" from-[#140c33] to-[#1b1142] text-white py-24 px-8 md:px-16 text-center relative overflow-hidden">
         <h2 className="text-5xl font-bold mb-4 glow-text">VIP & Rewards</h2>
         <p className="mb-10 text-pink-300 text-lg">Unlock exclusive perks by becoming a VIP or L Card Holder</p>
         <div className="relative flex justify-center z-10">
@@ -122,7 +122,7 @@ const ArenaSections = () => {
 
       {/* Testimonials */}
      {/* Testimonials Section */}
-<section className=" text-white py-24 px-8 md:px-16  w-screen">
+<section className=" text-white py-24 px-8 md:px-16 ">
   <h2 className="text-5xl font-bold text-center mb-14 glow-text">User Shouts</h2>
   <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
     {testimonials.map((user, idx) => (
@@ -148,7 +148,7 @@ const ArenaSections = () => {
 
 
       {/* Final CTA */}
-      <section className="relative  w-screen from-[#0b0c28] to-black text-white py-28 text-center overflow-hidden">
+      <section className="relative  from-[#0b0c28] to-black text-white py-28 text-center overflow-hidden">
         <h2 className="text-5xl font-bold mb-6 glow-text">Start Collecting Now</h2>
         <p className="mb-8 text-pink-400 text-lg">Get your Free Card & Join the Arena</p>
         <button className="px-10 py-4 bg-white/10 backdrop-blur-lg border border-white/20 text-white rounded-2xl shadow-xl hover:scale-105 transition-all">

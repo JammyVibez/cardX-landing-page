@@ -17,7 +17,7 @@ const LandingPage = () => {
         <title>Welcome | CardX</title>
       </Helmet>
       <Header />
-      <div className="landing-page">
+      <div className="landing-page bg-black text-white dark:bg-animeDark dark:text-animeText">
         <Hero/>
         <Carousel />
         <CardTier />

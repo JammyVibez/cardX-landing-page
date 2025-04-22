@@ -67,7 +67,7 @@ export default function Explore() {
             <title>Explore | CardX</title>
           </Helmet>
     <Header />
-    <div className="explore-wrapper from-[#0a0a23] to-[#0f0c29] text-white min-h-screen pt-20 px-4">
+    <div className="explore-wrapper bg-black dark:bg-animeDark dark:text-animeText text-white min-h-screen pt-20 px-4">
       {/* Galaxy Map */}
       <section className="py-16 text-center">
         <h2 className="text-4xl font-bold flex items-center justify-center gap-2 mb-4 text-cyan-300">
